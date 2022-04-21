@@ -1,5 +1,5 @@
 #!/bin/sh
 
-set -eu
+echo $PING_URL;
 
 curl $PING_URL
