@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-RUN apk add --no-cache curl
+RUN apt install curl -y
 
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
