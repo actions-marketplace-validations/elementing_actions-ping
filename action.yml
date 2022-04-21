@@ -12,8 +12,6 @@ inputs:
 runs:
   using: "docker"
   image: "Dockerfile"
-  entrypoint: "/bin/dokku-deploy"
-  post-entrypoint: "/bin/dokku-unlock"
-  post-if: cancelled()
+  entrypoint: "/entrypoint.sh"
   env:
     PING_URL: ${{ inputs.url }}
