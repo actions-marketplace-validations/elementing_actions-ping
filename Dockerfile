@@ -1,5 +1,6 @@
 FROM ubuntu:latest
 
+RUN apt-get update
 RUN apt install curl -y
 
 ADD entrypoint.sh /entrypoint.sh
